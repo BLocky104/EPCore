@@ -5,6 +5,8 @@ import gregtech.common.blocks.BlockGlassCasing;
 import gregtech.common.blocks.MetaBlocks;
 import net.minecraftforge.fluids.FluidStack;
 
+import static gtb.api.recipes.GTBRecipeMaps.*;
+
 import static cn.gtcommunity.epimorphism.api.recipe.EPRecipeMaps.*;
 import static cn.gtcommunity.epimorphism.api.unification.EPMaterials.*;
 import static cn.gtcommunity.epimorphism.common.items.EPMetaItems.*;
@@ -119,7 +121,7 @@ public class SpintronicCircuits {
                 .cleanroom(CleanroomType.CLEANROOM)
                 .buildAndRegister();
 
-        ION_IMPLANTATER_RECIPES.recipeBuilder()
+        ION_IMPLANTER_RECIPES.recipeBuilder()
                 .input(ring, Fullerene)
                 .input(wireFine, ThalliumCopperChloride, 4)
                 .fluidInputs(Kevlar.getFluid(L))

@@ -4,6 +4,7 @@ import cn.gtcommunity.epimorphism.common.blocks.EPBlockCrucibleCasing;
 import cn.gtcommunity.epimorphism.common.blocks.EPMetablocks;
 import gregtech.api.metatileentity.multiblock.CleanroomType;
 import net.minecraftforge.fluids.FluidStack;
+import static gtb.api.recipes.GTBRecipeMaps.*;
 
 import static cn.gtcommunity.epimorphism.api.recipe.EPRecipeMaps.*;
 import static cn.gtcommunity.epimorphism.api.unification.EPMaterials.*;
@@ -247,7 +248,7 @@ public class OpticalCircuits {
                 .cleanroom(CleanroomType.CLEANROOM)
                 .buildAndRegister();
 
-        ION_IMPLANTATER_RECIPES.recipeBuilder()
+        ION_IMPLANTER_RECIPES.recipeBuilder()
                 .input(dust, Silver, 4)
                 .input(plate, PMMA)
                 .fluidInputs(KaptonE.getFluid(L))

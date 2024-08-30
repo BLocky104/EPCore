@@ -62,8 +62,6 @@ public class EPRecipeMaps {
     @ZenProperty
     public static final RecipeMap<NoCoilTemperatureRecipeBuilder> ROASTER_RECIPES;
     @ZenProperty
-    public static final RecipeMap<SimpleRecipeBuilder> ION_IMPLANTATER_RECIPES;
-    @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> DISSOLUTION_TANK_RECIPES;
     @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> DRILLING_RECIPES;
@@ -251,14 +249,8 @@ public class EPRecipeMaps {
         ROASTER_RECIPES = new RecipeMap<>("roaster_recipes", 3, 3, 3, 3, new NoCoilTemperatureRecipeBuilder(), false)
                 .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressWidget.MoveType.HORIZONTAL)
                 .setSound(GTSoundEvents.FURNACE);
-
-        //  Ion Implantater Recipemap
-        ION_IMPLANTATER_RECIPES = new RecipeMap<>("ion_implanter_recipes", 3, 1, 1, 0, new SimpleRecipeBuilder(), false)
-                .setProgressBar(GuiTextures.PROGRESS_BAR_ARC_FURNACE, ProgressWidget.MoveType.HORIZONTAL)
-                .setSound(GTSoundEvents.ELECTROLYZER);
-
         //  Dissolution Tank Recipemap
-        DISSOLUTION_TANK_RECIPES = new RecipeMap<>("dissolution_tank_recipes", 2, 2, 4, 4, new SimpleRecipeBuilder(), false);
+        DISSOLUTION_TANK_RECIPES = new RecipeMap<>("dissolution_tank_recipes", 2, 3, 4, 4, new SimpleRecipeBuilder(), false);
 
         //  Industrial Drilling Rig Recipemap
         DRILLING_RECIPES = new RecipeMap<>("drill_recipes", 1, 1, 0, 1, new SimpleRecipeBuilder(), false)

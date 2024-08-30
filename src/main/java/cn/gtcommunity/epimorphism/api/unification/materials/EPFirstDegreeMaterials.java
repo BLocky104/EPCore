@@ -486,6 +486,7 @@ public class EPFirstDegreeMaterials {
         //  24064 Alumina
         Alumina = new Material.Builder(getMaterialsId(), gregtechId("alumina"))
                 .dust()
+                .fluid()
                 .color(0x78c3eb)
                 .iconSet(METALLIC)
                 .components(Aluminium, 2, Oxygen, 3)

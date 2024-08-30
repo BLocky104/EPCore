@@ -5,6 +5,7 @@ import cn.gtcommunity.epimorphism.common.blocks.EPBlockBoilerCasing;
 import cn.gtcommunity.epimorphism.common.blocks.EPBlockMultiblockCasing;
 import cn.gtcommunity.epimorphism.common.blocks.EPMetablocks;
 import gregicality.multiblocks.api.render.GCYMTextures;
+import gtb.api.recipes.GTBRecipeMaps;
 import gregicality.multiblocks.common.block.GCYMMetaBlocks;
 import gregicality.multiblocks.common.block.blocks.BlockLargeMultiblockCasing;
 import gregicality.multiblocks.common.block.blocks.BlockUniqueCasing;
@@ -27,7 +28,7 @@ import javax.annotation.Nonnull;
 
 public class EPMetaTileEntityIonImplantater extends RecipeMapMultiblockController {
     public EPMetaTileEntityIonImplantater(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId, EPRecipeMaps.ION_IMPLANTATER_RECIPES);
+        super(metaTileEntityId, GTBRecipeMaps.ION_IMPLANTER_RECIPES);
     }
 
     @Override

@@ -1,7 +1,7 @@
 package cn.gtcommunity.epimorphism.loaders.recipe.circuits;
 
 import gregtech.api.metatileentity.multiblock.CleanroomType;
-
+import static gtb.api.recipes.GTBRecipeMaps.*;
 import static cn.gtcommunity.epimorphism.api.recipe.EPRecipeMaps.*;
 import static cn.gtcommunity.epimorphism.api.unification.EPMaterials.*;
 import static cn.gtcommunity.epimorphism.common.items.EPMetaItems.*;
@@ -354,7 +354,7 @@ public class CosmicCircuits {
                 .cleanroom(CleanroomType.CLEANROOM)
                 .buildAndRegister();
 
-        ION_IMPLANTATER_RECIPES.recipeBuilder()
+        ION_IMPLANTER_RECIPES.recipeBuilder()
                 .input(ring, Legendarium)
                 .input(wireFine, Infinity, 4)
                 .fluidInputs(FullerenePolymerMatrix.getFluid(L * 2))
