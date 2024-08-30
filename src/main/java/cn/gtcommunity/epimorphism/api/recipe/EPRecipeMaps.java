@@ -161,7 +161,7 @@ public class EPRecipeMaps {
                 .setSound(GTSoundEvents.FURNACE);
 
         //  Catalytic Reformer Recipemap
-        CATALYTIC_REFORMER_RECIPES = new RecipeMap<>("catalytic_reformer_recipes", 1, 0, 1, 4, new SimpleRecipeBuilder(), false)
+        CATALYTIC_REFORMER_RECIPES = new RecipeMap<>("catalytic_reformer_recipes", 1, 0, 2, 4, new SimpleRecipeBuilder(), false)
                 .setProgressBar(GuiTextures.PROGRESS_BAR_CRACKING, ProgressWidget.MoveType.HORIZONTAL)
                 .setSound(GTSoundEvents.FURNACE);
 
