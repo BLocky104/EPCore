@@ -275,6 +275,8 @@ public class EPMetaTileEntityMegaTurbine extends FuelMultiblockController implem
                         .or(abilities(MultiblockAbility.IMPORT_ITEMS).setExactLimit(1))
                         .or(abilities(MultiblockAbility.IMPORT_FLUIDS).setMinGlobalLimited(1).setMaxGlobalLimited(4))
                         .or(abilities(MultiblockAbility.EXPORT_FLUIDS).setMinGlobalLimited(1).setMaxGlobalLimited(4))
+                        .or(abilities(EPMultiblockAbility.REINFORCED_ROTOR_MULTIBLOCK_ABILITY).setMinGlobalLimited(1).setMaxGlobalLimited(1))
+
                 )
                 .build();
     }
